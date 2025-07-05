@@ -10,6 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+/* ——— Thinner underline and closer to text ——— */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Use the text's color */
+  position: relative;
+  padding-bottom: 1px; /* Reduce space between text and underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  border-bottom: 1px solid #000; /* Thinner underline (1px) */
+}
+
+a:hover {
+  background-color: #ffe600; /* Highlight color (like Paula's yellow) */
+}
+
     /* ─── GENERAL RESET ─────────────────────────────────────────── */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
@@ -94,7 +108,7 @@
     <!-- ✧ ABOUT / BLURB ---------------------------------------------------- -->
     <section id="about">
       <p>
-        Welcome! I’m a second-year Ph.D. student in Managerial Economics and Strategy at Northwestern University's Kellogg School of Management.  
+        Welcome! I’m a second-year Ph.D. student in <a href="https://www.kellogg.northwestern.edu/doctoral/programs/managerialeconomicsstrategy/" target="_blank">Managerial Economics and Strategy</a> at Northwestern University's Kellogg School of Management.  
         My research fields are auction theory and decision theory. You can learn more about my research here.  
         You can reach me at <a href="mailto:tiago.botelho@kellogg.northwestern.edu">tiago.botelho@kellogg.northwestern.edu</a>.
       </p>
