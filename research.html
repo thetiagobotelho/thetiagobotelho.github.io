@@ -30,12 +30,33 @@
     /* paper list */
     .paper-list{list-style:disc;margin-left:1.25rem;}
     .paper-list li{margin:.6rem 0;}
+/* ——— Highlight with translucent aquamarine blue on hover ——— */
+.highlight-link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000;
+  transition: background-color 0.3s ease;
+}
 
-    /* highlight-underline links (reuse) */
-    .highlight-link{
-      text-decoration:none;color:inherit;position:relative;padding-bottom:1px;
-      border-bottom:1px solid #000;transition:background-color .3s ease;}
-    .highlight-link:hover{background:#ffe600;}
+.highlight-link:hover {
+  background-color: rgba(113, 217, 226, 0.6); /* Aquamarine blue with 70% opacity */
+}
+
+/* ——— Thinner underline and closer to text ——— */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Use the text's color */
+  position: relative;
+  padding-bottom: 1px; /* Reduce space between text and underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  border-bottom: 1px solid #000; /* Thinner underline (1px) */
+}
+
+a:hover {
+  background-color: rgba(113, 217, 226, 0.6); /* Highlight color */
+}
 
     @media(min-width:900px){nav{gap:4.5rem;}}
   </style>
