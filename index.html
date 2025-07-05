@@ -4,12 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tiago Botelho | Research</title>
+  <title>Tiago Botelho</title>
 
   <!-- Fonts: thin, elegant headings + readable body -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+/* ——— Highlight + underline effect on "here" link ——— */
+.highlight-link {
+  text-decoration: none; /* Remove default underline */
+  color: inherit;        /* Use the same color as the text */
+  border-bottom: 1px solid #000; /* Underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.highlight-link:hover {
+  background-color: #ffe600; /* Highlight color on hover */
+}
 /* ——— Thinner underline and closer to text ——— */
 a {
   text-decoration: none; /* Remove default underline */
@@ -21,7 +32,7 @@ a {
 }
 
 a:hover {
-  background-color: #ffe600; /* Highlight color (like Paula's yellow) */
+  background-color: #ffe600; /* Highlight color */
 }
 
     /* ─── GENERAL RESET ─────────────────────────────────────────── */
@@ -98,7 +109,7 @@ a:hover {
   <main class="container">
     <header>
       <h1>Tiago Botelho</h1>
-      <p class="sub">Ph.D. student&nbsp;in Managerial Economics and Strategy • Northwestern University</p>
+      <p class="sub">Ph.D. Student&nbsp;in Managerial Economics and Strategy • Northwestern University</p>
 
       <!-- replace with an actual portrait or remove -->
       <img src="portrait.jpg" alt="Portrait of Tiago Botelho">
@@ -108,7 +119,7 @@ a:hover {
     <section id="about">
       <p>
         Welcome! I’m a second-year Ph.D. student in <a href="https://www.kellogg.northwestern.edu/doctoral/programs/managerialeconomicsstrategy/" target="_blank">Managerial Economics and Strategy</a> at Northwestern University's Kellogg School of Management.  
-        My research fields are auction theory and decision theory. You can learn more about my research here.  
+        My research fields are auction theory and decision theory. You can learn more about my research <a href="research.html" class="highlight-link">here</a>.  
         You can reach me at <a href="mailto:tiago.botelho@kellogg.northwestern.edu">tiago.botelho@kellogg.northwestern.edu</a>.
       </p>
     </section>
