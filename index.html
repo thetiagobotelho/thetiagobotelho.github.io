@@ -10,17 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-/* ——— Highlight + underline effect on "here" link ——— */
+/* ——— Highlight with translucent aquamarine blue on hover ——— */
 .highlight-link {
-  text-decoration: none; /* Remove default underline */
-  color: inherit;        /* Use the same color as the text */
-  border-bottom: 1px solid #000; /* Underline */
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000;
+  transition: background-color 0.3s ease;
 }
 
 .highlight-link:hover {
-  background-color: #ffe600; /* Highlight color on hover */
+  background-color: rgba(113, 217, 226, 0.6); /* Aquamarine blue with 70% opacity */
 }
+
 /* ——— Thinner underline and closer to text ——— */
 a {
   text-decoration: none; /* Remove default underline */
@@ -32,7 +35,7 @@ a {
 }
 
 a:hover {
-  background-color: #ffe600; /* Highlight color */
+  background-color: rgba(113, 217, 226, 0.6); /* Highlight color */
 }
 
     /* ─── GENERAL RESET ─────────────────────────────────────────── */
