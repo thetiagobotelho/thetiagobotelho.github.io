@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+    /* —— final portrait settings ——————————— */
+.portrait{
+  width:150px;        /* a tad smaller than before                    */
+  height:auto;        /* keep natural aspect ratio                    */
+  max-height:none;    /* cancels the old 430-px limit                 */
+  object-fit:contain; /* show the whole image, no cropping            */
+  border-radius:4px;
+  flex-shrink:0;
+}
+
     /* ─── GENERAL RESET ─────────────────────────────────────────── */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
